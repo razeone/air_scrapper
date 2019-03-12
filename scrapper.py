@@ -14,8 +14,8 @@ TREE = html.fromstring(PAGE.content)
 
 def get_mongo_client():
     client = MongoClient()
-    client = MongoClient('mongodb://redoxon:redoxon@ec2-54-160-215-72.compute-1.amazonaws.com:27017/redoxon')
-    return client['redoxon']
+    client = MongoClient('mongodb://user:pass@host:27017/db')
+    return client['collection']
 
 
 def strip_string(input_string):
